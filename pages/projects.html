@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="It is a website I guess.">
+        <title>
+            Main
+        </title>
+        <link rel="stylesheet" href="/stylings/page.css">
+    </head>
+    <body>
+        <div id="navbar-container"></div>
+        <script>
+            fetch('/static_elements/nav_bar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                });
+        </script>
+
+        <h1>
+            Projects Yay!
+        </h1>
+
+        <pre>
+I like to code, but mostly small projects.
+I would like to make bigger and significant projects, but I haven't finished any yet.
+If there is a significant project finished you will find it on this page.
+        </pre>
+
+        <p>
+            If you want to check out all projects (<a href="https://github.com/JackDevilGod">Github</a>).
+        </p>
+    </body>
+</html>
