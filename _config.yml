@@ -22,7 +22,7 @@ title: DEVILGOD
 email: devilgods.696@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A definitely normal website.
-baseurl: /jackdevilgod.github.io/_site # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: https://jackdevilgod.github.io # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  JackDevilGod
 
