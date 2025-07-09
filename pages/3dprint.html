@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="It is a website I guess.">
+        <title>
+            Youtube
+        </title>
+        <link rel="stylesheet" href="/stylings/page.css">
+    </head>
+    <body>
+        <div id="navbar-container"></div>
+        <script>
+            fetch('/static_elements/nav_bar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                });
+        </script>
+
+        <h1>
+            3d printing
+        </h1>
+
+        <pre>
+Just a hobby.
+Again not real big projects yet, but you can check out some other I have already done.
+        </pre>
+
+        <p>
+            Check it out on <a href="https://www.printables.com/@JackDevilgod_2163679">Printables</a>.
+        </p>
+    </body>
+</html>
