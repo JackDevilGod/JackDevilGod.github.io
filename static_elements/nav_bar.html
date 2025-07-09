@@ -3,22 +3,41 @@
         <link rel="stylesheet" href="/stylings/header.css">
     </head>
     <body>
-        <nav class="header">
-            <div class="header_logo">
+        <header>
+            <div class="header_brand">
                 <img class="header_image" src="/images/logo_dg.png" alt="Logo">
                 <p class="header_text">
                     A page in development hell.
                 </p>
             </div>
 
-            <ul class= "page_select">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/projects.html">Projects</a></li>
-                <li><a href="/pages/3dprint.html">3D Printing</a></li>
-                <li><a href="/pages/youtube.html">Youtube</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/projects.html">Projects</a></li>
+                    <li><a href="/pages/3dprint.html">3D Printing</a></li>
+                    <li><a href="/pages/youtube.html">Youtube</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="hamburg_icon" onclick="toggleMobileMenu(this)">
+                <div id="b1"></div>
+                <div id="b1"></div>
+                <div id="b1"></div>
+
+                <ul class="mobile_menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/projects.html">Projects</a></li>
+                    <li><a href="/pages/3dprint.html">3D Printing</a></li>
+                    <li><a href="/pages/youtube.html">Youtube</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <script src="/scripts/mobile_menu.js"></script>
     </body>
 </html>
