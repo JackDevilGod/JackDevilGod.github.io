@@ -5,34 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="It is a website I guess.">
         <title>
-            Main
+            [inset name]
         </title>
         <link rel="stylesheet" href="/stylings/page.css">
     </head>
     <body>
         <div id="navbar-container"></div>
         <script>
-            fetch('static_elements/nav_bar.html')
+            fetch('/static_elements/nav_bar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 });
         </script>
 
-        <h1 style="margin-top: 2%; text-align: center;">Welcome to a webpage!</h1>
-
-        <p>
-            This will just be a small crappy static website for some kind of use.
-        </p>
-
-        <pre>
-Like project show of portfolio and such, but for now it is partially anonymous.
-If you tried you can probably find out who I am, but eh the secret will always come out anyway.
-        </pre>
-
-        <p>
-            So just check somethings out on this website and fuck off.
-        </p>
+        <h1>
+            [content]
+        </h1>
 
         <script type="text/javascript" src="/scripts/mobile_menu.js" defer></script>
     </body>
