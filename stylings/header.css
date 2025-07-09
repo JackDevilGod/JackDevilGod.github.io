@@ -52,10 +52,11 @@ ul li:hover {
 
 .header_text {
     width: 100px;
+    height: 100px;
 
-    margin-top: -25px;
+    margin-top: -90px;
 
-    font-size: 25px;
+    font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
 
     white-space: pre-wrap;
