@@ -11,6 +11,11 @@
     </head>
     <body>
         <div id="navbar-container"></div>
+
+        <h1>
+            [content]
+        </h1>
+
         <script>
             fetch('/static_elements/nav_bar.html')
                 .then(response => response.text())
@@ -18,10 +23,6 @@
                     document.getElementById('navbar-container').innerHTML = data;
                 });
         </script>
-
-        <h1>
-            [content]
-        </h1>
 
         <script type="text/javascript" src="/scripts/header.js" defer></script>
     </body>
