@@ -4,19 +4,22 @@
     box-sizing: border-box;
 }
 
-header a {
-    text-decoration: none;
-}
 
 header {
-    background-color: #2d2d2d;
-    color: #f7f7f7;
-
+    width: 100vw;
     height: 100px;
     padding: 0 20px;
 
+    background-color: #2d2d2d;
+    color: #f7f7f7;
+
+
     display: flex;
     justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
 }
 
 ul {

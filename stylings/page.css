@@ -5,6 +5,8 @@ body {
 }
 
 p {
+    padding: 0 20px;
+
     margin-top: 25px;
 
     font-size: 25px;
@@ -12,6 +14,8 @@ p {
 }
 
 pre {
+    padding: 0 20px;
+
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
@@ -24,6 +28,12 @@ pre {
 }
 
 h1 {
+    padding: 0 20px;
+
     margin-top: 2%;
     text-align: center;
+}
+
+.navbar-container {
+    width: 100vw;
 }
