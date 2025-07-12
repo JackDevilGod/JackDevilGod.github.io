@@ -11,13 +11,6 @@
     </head>
     <body>
         <div id="navbar-container"></div>
-        <script>
-            fetch('/static_elements/nav_bar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-container').innerHTML = data;
-                });
-        </script>
 
         <h1>This is the about page</h1>
 
