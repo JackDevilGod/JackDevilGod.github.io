@@ -4,34 +4,13 @@ body {
     color: #f7f7f7;
 }
 
-p {
-    padding: 0 20px;
-
-    margin-top: 25px;
-
-    font-size: 25px;
-    text-align: center;
-}
-
 pre {
-    padding: 0 20px;
-
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
     width: 100%;
-
-    font-size: 25px;
-    text-align: center;
-}
-
-h1 {
-    padding: 0 20px;
-
-    margin-top: 2%;
-    text-align: center;
 }
 
 .navbar-container {
@@ -41,4 +20,6 @@ h1 {
 .content {
     width: 66%;
     margin-left: 17%;
+
+    font-size: 25px;
 }
