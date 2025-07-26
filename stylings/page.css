@@ -4,7 +4,30 @@ body {
     color: #000;
 }
 
-pre {
+.navbar-container {
+    width: 100vw;
+}
+
+.content {
+    width: 66%;
+    height: 100vh;
+    min-width: 300px;
+
+    margin-left: 17%;
+    align-self: flex-start;
+
+    font-size: 25px;
+
+    background-color: #bcbcbc;
+}
+
+.content p {
+    margin-left: 10px;
+}
+
+.content pre {
+    margin-left: 10px;
+
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
@@ -13,18 +36,6 @@ pre {
     width: 100%;
 }
 
-.navbar-container {
-    width: 100vw;
-}
-
-.content {
-    width: 66%;
-    height: 100vh;
-
-    margin-left: 17%;
-    align-self: flex-start;
-
-    font-size: 25px;
-
-    background-color: #bcbcbc;
+.page_header {
+    text-align: center;
 }
