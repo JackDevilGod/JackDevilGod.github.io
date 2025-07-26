@@ -1,7 +1,7 @@
 body {
     background-color: #adadad;
     font-family: Arial, sans-serif;
-    color: #f7f7f7;
+    color: #000;
 }
 
 pre {
@@ -19,7 +19,12 @@ pre {
 
 .content {
     width: 66%;
+    height: 100vh;
+
     margin-left: 17%;
+    align-self: flex-start;
 
     font-size: 25px;
+
+    background-color: #bcbcbc;
 }

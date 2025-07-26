@@ -60,6 +60,7 @@ ul li:hover {
     width: auto;
     height: 75%;
     margin-top: -5px;
+    margin-left: 10px;
 
     font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
