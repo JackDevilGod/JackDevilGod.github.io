@@ -2,6 +2,8 @@ body {
     background-color: #adadad;
     font-family: Arial, sans-serif;
     color: #000;
+
+    align-items: start;
 }
 
 .navbar-container {
@@ -14,7 +16,6 @@ body {
     min-width: 300px;
 
     margin-left: 17%;
-    align-self: flex-start;
 
     font-size: 25px;
 
