@@ -31,10 +31,6 @@ body {
     margin-left: 10px;
 }
 
-.content h1 {
-    margin-left: 0px;
-}
-
 .content pre {
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
@@ -46,4 +42,5 @@ body {
 
 .page_header {
     text-align: center;
+    margin-left: 0px;
 }
