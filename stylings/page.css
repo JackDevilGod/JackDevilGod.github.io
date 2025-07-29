@@ -3,7 +3,11 @@ body {
     font-family: Arial, sans-serif;
     color: #000;
 
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
 }
 
 .navbar-container {
@@ -13,11 +17,10 @@ body {
 .content {
     width: 66%;
     height: 100vh;
-    min-width: 300px;
-
-    margin-left: 17%;
+    min-width: 400px;
 
     font-size: 25px;
+    align-self: center;
 
     background-color: #bcbcbc;
 }
