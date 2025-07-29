@@ -28,15 +28,14 @@ body {
 .content * {
     margin-top: 25px;
     margin-bottom: 25px;
+    margin-left: 10px;
 }
 
-.content p {
-    margin-left: 10px;
+.content h1 {
+    margin-left: 0px;
 }
 
 .content pre {
-    margin-left: 10px;
-
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
