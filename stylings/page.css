@@ -15,7 +15,7 @@ body {
 }
 
 .content {
-    width: 66%;
+    width: 66vw;
     height: 100vh;
     min-width: 400px;
 
