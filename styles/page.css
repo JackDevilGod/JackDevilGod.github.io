@@ -1,6 +1,5 @@
 body {
     background-color: #adadad;
-    font-family: Arial, sans-serif;
     color: #000;
 
     display: flex;
@@ -19,7 +18,8 @@ body {
     height: 100vh;
     min-width: 400px;
 
-    font-size: 25px;
+    font-family: Arial, sans-serif;
+    font-size: xx-large;
     align-self: center;
 
     background-color: #bcbcbc;
@@ -37,10 +37,17 @@ body {
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
-    width: 100%;
+
+    font-family: Arial, sans-serif;
 }
 
 .page_header {
     text-align: center;
     margin-left: 0px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .content {
+        width: 100%;
+    }
 }
