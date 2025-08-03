@@ -37,6 +37,8 @@ body {
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
+
+    font-family: Arial, sans-serif;
 }
 
 .page_header {
