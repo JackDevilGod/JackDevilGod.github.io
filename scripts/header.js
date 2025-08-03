@@ -11,5 +11,6 @@ fetch('/static_elements/nav_bar.html')
 fetch('/static_elements/nav_list.html')
                 .then(response => response.text())
                 .then(data => {
-                    document.getElementsByClassName('nav_content').innerHTML = data;
+                    document.getElementById('desktop_menu').innerHTML = data;
+                    document.getElementById('mobile_menu').innerHTML = data;
                 });
