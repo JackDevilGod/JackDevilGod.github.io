@@ -14,5 +14,7 @@
     
     display: block;
 
-    margin: 5px auto 50px auto;
+    margin: 5px auto 5px auto;
+
+    padding-bottom: 20px;
 }
