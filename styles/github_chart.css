@@ -1,0 +1,18 @@
+#github_chart_container {
+    max-width: 98%;
+
+    background-color: rgb(181, 182, 187);
+    margin: 0 auto;
+}
+
+#github_chart_container h3 {
+    text-align: center;
+}
+
+#github_chart_container img {
+    max-width: 97.5%;
+    
+    display: block;
+
+    margin: 5px auto 50px auto;
+}
