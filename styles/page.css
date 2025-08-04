@@ -23,22 +23,22 @@ body {
     align-self: center;
 
     background-color: #bcbcbc;
-}
 
-.content * {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-}
+    * {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
 
-.content pre {
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
+    pre {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
 
-    font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif;
+    }
 }
 
 .page_header {

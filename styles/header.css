@@ -28,23 +28,23 @@ ul {
     list-style: none;
 
     justify-content: space-around;
-}
 
-ul a {
-    color: #f7f7f7;
-    font-size: xx-large;
+    li {
+        padding: 5px;
+        margin: 10px;
 
-    text-decoration: none;
-}
+        a {
+            color: #f7f7f7;
+            font-size: xx-large;
 
-ul li {
-    padding: 5px;
-    margin: 10px;
-}
+            text-decoration: none;
+        }
+    }
 
-ul li:hover {
-    background-color: rgb(27, 27, 27);
-}
+    li:hover {
+        background-color: rgb(27, 27, 27);
+    }
+} 
 
 .header_brand {
     width: 20%;
@@ -88,15 +88,15 @@ ul li:hover {
     display: none;
 
     cursor: pointer;
-}
 
-#hamburg_icon div {
-    width: 35px;
-    height: 3px;
+    div {
+        width: 35px;
+        height: 3px;
 
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
 }
 
 .open .b1 {
@@ -119,6 +119,25 @@ ul li:hover {
     background-color: #2d2d2d;
     box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
     border-radius: 0 0 0 10px;
+
+    li {
+        width: 100%;
+
+        text-align: center;
+        margin-bottom: 10px;
+
+        a {
+            display: block;
+            width: 100%;
+
+            padding: 12px 0;
+
+            color: #f7f7f7;
+
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+    }
 }
 
 .open #mobile_menu {
@@ -126,26 +145,6 @@ ul li:hover {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
-
-
-#mobile_menu li {
-    width: 100%;
-
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-#mobile_menu li a {
-    display: block;
-    width: 100%;
-
-    padding: 12px 0;
-
-    color: #f7f7f7;
-
-    text-decoration: none;
-    box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1100px) {

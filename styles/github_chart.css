@@ -3,18 +3,18 @@
 
     background-color: rgb(181, 182, 187);
     margin: 0 auto;
-}
 
-#github_chart_container h3 {
-    text-align: center;
-}
+    h3 {
+        text-align: center;
+    }
 
-#github_chart_container img {
-    max-width: 97.5%;
+    img {
+        max-width: 97.5%;
     
-    display: block;
+        display: block;
 
-    margin: 5px auto 5px auto;
+        margin: 5px auto 5px auto;
 
-    padding-bottom: 20px;
+        padding-bottom: 20px;
+    }
 }
