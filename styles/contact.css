@@ -1,0 +1,9 @@
+.contact_table {
+    width: 95%;
+
+    th {
+        text-align: left;
+
+        font-size: xx-large;
+    }
+}
