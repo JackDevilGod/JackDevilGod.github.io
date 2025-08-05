@@ -1,0 +1,16 @@
+.contact_table {
+    width: 95%;
+
+    background-color: rgb(133, 133, 133);
+    border-collapse: collapse;
+
+    * {
+        border-bottom: 2px solid #ccc;
+    }
+
+    th {
+        text-align: left;
+
+        font-size: xx-large;
+    }
+}
