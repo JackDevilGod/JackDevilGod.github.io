@@ -15,11 +15,11 @@ body {
 
 .content {
     width: 66vw;
-    height: 100vh;
+    height: 100dvh;
     min-width: 400px;
 
     font-family: Arial, sans-serif;
-    font-size: xx-large;
+    font-size: clamp(1.5rem, 1vw, 5rem);
     align-self: center;
 
     background-color: #bcbcbc;
