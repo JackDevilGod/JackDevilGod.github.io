@@ -43,6 +43,8 @@ development hell.</pre>
 	</nav>
 </header>
 
+<h1>'{open}'</h1>
+
 {@render children?.()}
 
 <style>
