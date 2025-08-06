@@ -37,9 +37,11 @@ development hell.</pre>
 	<nav id='mobile_navbar'>
 		<BurgerIcon bind:open={open}/>
 	</nav>
-</header>
 
-<h1>'{open}'</h1>
+	{#if open} 
+		<h1>test</h1>
+	{/if}
+</header>
 
 {@render children?.()}
 
