@@ -39,7 +39,11 @@ development hell.</pre>
 	</nav>
 
 	{#if open} 
-		<h1>test</h1>
+		<ul>
+			{#each main_pages as {route, name}}
+				<li><a href="{route}">{name}</a></li>
+			{/each}
+		</ul>
 	{/if}
 </header>
 
