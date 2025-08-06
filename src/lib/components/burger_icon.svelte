@@ -1,17 +1,24 @@
 <script>
 	const amount = [1, 2, 3];
+	let state_class = $state('');
 
 	let { open = false, arialabel = 'toggle menu'} = $props();
 
 	const onClick = () => {
 		open = !open;
+
+		if (open) {
+			state_class = 'open';
+		} else {
+			state_class = '';
+		}
 	};
 </script>
 
 
-<button id='burger' onclick={onClick} aria-label="{arialabel}" aria-expanded="{open}">
+<button id='burger' class="{state_class}" onclick={onClick} aria-label="{arialabel}" aria-expanded="{open}">
 	{#each  amount as id}
-		<div id='bar{id}' class='burger_layer'></div>
+		<div id='bar{id}' class='burger_layer {state_class}'></div>
 	{/each}
 </button>
 
@@ -32,9 +39,27 @@
 		background: none;
 		border: none;
 
-		display: flex;
+		display: block;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+
+	:root {
+    	--transition-duration: 400ms;
+  	}
+
+	.open {
+		#bar1 {
+			transform: rotate(45deg) translate(6px);
+		}
+
+		#bar2 {
+			display: none;
+		}
+
+		#bar3 {
+			transform: rotate(-45deg) translate(6px);
+		}
 	}
 </style>
