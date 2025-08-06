@@ -1,13 +1,19 @@
 <script>
 	const amount = [1, 2, 3];
+
+	let { open = false, arialabel = 'toggle menu'} = $props();
+
+	const onClick = () => {
+		open = !open;
+	};
 </script>
 
 
-<div id='burger'>
+<button id='burger' onclick={onClick} aria-label="{arialabel}" aria-expanded="{open}">
 	{#each  amount as id}
 		<div id='bar{id}' class='burger_layer'></div>
 	{/each}
-</div>
+</button>
 
 <style>
 	.burger_layer {
@@ -22,6 +28,9 @@
 	#burger {
 		height: 100%;
 		width: auto;
+
+		background: none;
+		border: none;
 
 		display: flex;
 		flex-direction: column;
