@@ -136,6 +136,7 @@ development hell.</pre>
 
 	#mobile_navbar {
 		display: none;
+		flex-direction: column;
 
 		margin-right: 20px;
 	}
@@ -150,7 +151,7 @@ development hell.</pre>
 		}
 
 		#mobile_navbar {
-			display: block;
+			display: flex;
 		}
 	}
 </style>
