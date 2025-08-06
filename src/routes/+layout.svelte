@@ -136,7 +136,7 @@ development hell.</pre>
 	}
 
 	#hamburg_icon {
-		margin: auto 0;
+		height: 100%;
 
 		display: none;
 
@@ -150,6 +150,53 @@ development hell.</pre>
 			margin: 6px 0;
 			transition: 0.4s;
 		}
+	}
+
+	.open .b1 {
+		-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+		transform: rotate(-45deg) translate(-6px, 6px);
+	}
+
+	#mobile_menu {
+		width: 200px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.4s ease, opacity 0.2s ease;
+		height: auto;
+		top: 100px;
+		right: 0;
+		left: auto;
+		position: absolute;
+		align-self: flex-end;
+		background-color: #080808;
+		opacity: 0;
+		pointer-events: none;
+		box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
+		border-radius: 0 0 0 10px;
+
+		li {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 10px;
+			a {
+				display: block;
+				width: 100%;
+				padding: 12px 0;
+				color: #f7f7f7;
+				text-decoration: none;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	.open #mobile_menu {
+	max-height: 500px;
+	opacity: 1;
+	pointer-events: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 	}
 
 	@media only screen and (max-width: 1150px) {
