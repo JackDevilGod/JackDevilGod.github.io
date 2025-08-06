@@ -2,7 +2,7 @@
 	const amount = [1, 2, 3];
 	let state_class = $state('');
 
-	let { open = false, arialabel = 'toggle menu'} = $props();
+	let { open = $bindable(false), arialabel = 'toggle menu'} = $props();
 
 	const onClick = () => {
 		open = !open;

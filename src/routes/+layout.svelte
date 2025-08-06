@@ -10,11 +10,7 @@
 		{route: '/', name: 'something'}
 		];
 	
-	let open = false;
-
-	let onClick = () => {
-		open = !open;
-	};
+	let open = $state(false);
 
 </script>
 
@@ -39,7 +35,7 @@ development hell.</pre>
 	</nav>
 
 	<nav id='mobile_navbar'>
-		<BurgerIcon/>
+		<BurgerIcon bind:open={open}/>
 	</nav>
 </header>
 
