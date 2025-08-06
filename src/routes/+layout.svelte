@@ -137,8 +137,19 @@ development hell.</pre>
 	#mobile_navbar {
 		display: none;
 		flex-direction: column;
+		position: relative;
 
 		margin-right: 20px;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+
+			top: 100%;
+			height: auto;
+
+			position: absolute;
+		}
 	}
 
 	@media only screen and (max-width: 1150px) {
