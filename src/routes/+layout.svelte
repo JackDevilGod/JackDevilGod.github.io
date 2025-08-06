@@ -36,15 +36,16 @@ development hell.</pre>
 
 	<nav id='mobile_navbar'>
 		<BurgerIcon bind:open={open}/>
-	</nav>
+	
 
-	{#if open} 
-		<ul>
-			{#each main_pages as {route, name}}
-				<li><a href="{route}">{name}</a></li>
-			{/each}
-		</ul>
-	{/if}
+		{#if open} 
+			<ul>
+				{#each main_pages as {route, name}}
+					<li><a href="{route}">{name}</a></li>
+				{/each}
+			</ul>
+		{/if}
+	</nav>
 </header>
 
 {@render children?.()}
