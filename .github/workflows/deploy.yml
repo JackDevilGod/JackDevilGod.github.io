@@ -35,13 +35,13 @@ jobs:
         with:
           static_site_generator: sveltekit
 
-      - name: Build
+      - name: Build site
         run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build'  # Adjust this if your output is in a different folder
+          path: build
 
   deploy:
     needs: build
