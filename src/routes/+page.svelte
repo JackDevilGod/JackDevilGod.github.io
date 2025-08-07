@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="It is a website I guess.">
-        <title>
-            Main
-        </title>
-        <link rel="stylesheet" href="/styles/page.css">
-    </head>
-    <body>
-        <div id="navbar-container"></div>
-
-        <div class="content">
+<div class="content">
             <h1 class="page_header">Welcome to a webpage!</h1>
 
             <p>
@@ -32,8 +18,4 @@ This website will thus be a collection of things I will do and have done as a po
             <p>
                 So just check something out on this website and fuck off.
             </p>
-        </div>
-
-        <script type="text/javascript" src="/scripts/header.js" defer></script>
-    </body>
-</html>
+</div>
