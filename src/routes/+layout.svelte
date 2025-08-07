@@ -143,19 +143,20 @@ development hell.</pre>
 		margin-right: 20px;
 
 		ul {
-			margin-top: 100px;
-			height: auto;
 			width: 300px;
-	
+			height: auto;
+			
+			margin-top: 100px;
 			margin-right: -20px;
 
 			display: flex;
 			flex-direction: column;
 			position: absolute;
+			align-content: center;
 
+			list-style: none;
 			background-color: #080808;
 			opacity: 80%;
-			list-style: none;
 
 			box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
 			border-radius: 0 0 0 10px;
