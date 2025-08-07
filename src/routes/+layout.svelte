@@ -138,17 +138,40 @@ development hell.</pre>
 		display: none;
 		flex-direction: column;
 		position: relative;
+		align-items: flex-end;
 
 		margin-right: 20px;
 
 		ul {
+			margin-top: 100px;
+			height: auto;
+			width: 300px;
+	
+			margin-right: -20px;
+
 			display: flex;
 			flex-direction: column;
-
-			top: 100%;
-			height: auto;
-
 			position: absolute;
+
+			background-color: #080808;
+			opacity: 80%;
+			box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
+			border-radius: 0 0 0 10px;
+			li {
+				width: 100%;
+				text-align: center;
+        		margin-bottom: 10px;
+
+				a {
+					display: block;
+					width: 100%;
+
+					padding: 12px 0;
+					text-decoration: none;
+
+					color: #f7f7f7;
+				}
+			}
 		}
 	}
 
