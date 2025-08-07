@@ -7,7 +7,11 @@
 
 	const main_pages = [
 		{route: '/', name: 'Home'},
-		{route: '/projects', name: 'Projects'}
+		{route: '/projects', name: 'Projects'},
+		{route: '/3dprinting', name: '3d printing'},
+		{route: '/youtube', name: 'Youtube'},
+		{route: '/about', name: 'About'},
+		{route: '/contact', name: 'Contact'}
 		];
 	
 	let open = $state(false);
