@@ -161,12 +161,15 @@ development hell.</pre>
 			border-radius: 0 0 0 10px;
 			li {
 				width: 100%;
+				height: auto;
+	
 				text-align: center;
         		margin-bottom: 10px;
 
 				a {
 					display: block;
 					width: 100%;
+					text-decoration: none;
 
 					padding: 12px 0;
 					font-size: x-large;
@@ -176,6 +179,7 @@ development hell.</pre>
 
 				a:hover {
 					background-color: #6d6d6d;
+					text-decoration: underline;
 				}
 			}
 		}
