@@ -1,7 +1,4 @@
 <script lang="ts">
-	export const trailingSlash = 'always';
-	export const prerender = true;
-
 	import BurgerIcon from '$lib/components/burger_icon.svelte';
 
 	import dg_logo from '$lib/assets/logo_dg.png'
