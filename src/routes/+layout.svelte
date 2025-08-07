@@ -145,7 +145,7 @@ development hell.</pre>
 		ul {
 			margin-top: 100px;
 			height: auto;
-			width: 200px;
+			width: 300px;
 	
 			margin-right: -20px;
 
