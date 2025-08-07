@@ -148,6 +148,7 @@ development hell.</pre>
 			
 			margin-top: 100px;
 			margin-right: -20px;
+			padding-left: 0;
 
 			display: flex;
 			flex-direction: column;
