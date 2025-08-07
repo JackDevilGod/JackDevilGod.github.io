@@ -7,7 +7,7 @@
 
 	const main_pages = [
 		{route: '/', name: 'Home'},
-		{route: '/', name: 'something'}
+		{route: '/projects', name: 'Projects'}
 		];
 	
 	let open = $state(false);
