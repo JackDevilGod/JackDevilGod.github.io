@@ -9,11 +9,14 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			 pages: 'build',
+      pages: 'build',
       assets: 'build',
       fallback: null
-    })
-	}
+    }),
+    prerender: {
+      entries: ['*']
+    }
+  }
 };
 
 export default config;
