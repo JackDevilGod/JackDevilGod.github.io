@@ -145,7 +145,7 @@ development hell.</pre>
 		ul {
 			margin-top: 100px;
 			height: auto;
-			width: 300px;
+			width: 200px;
 	
 			margin-right: -20px;
 
@@ -155,6 +155,8 @@ development hell.</pre>
 
 			background-color: #080808;
 			opacity: 80%;
+			list-style: none;
+
 			box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
 			border-radius: 0 0 0 10px;
 			li {
@@ -167,9 +169,13 @@ development hell.</pre>
 					width: 100%;
 
 					padding: 12px 0;
-					text-decoration: none;
+					font-size: x-large;
 
 					color: #f7f7f7;
+				}
+
+				a:hover {
+					background-color: #6d6d6d;
 				}
 			}
 		}
