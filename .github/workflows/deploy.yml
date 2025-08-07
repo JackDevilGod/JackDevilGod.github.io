@@ -41,7 +41,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build'  # Adjust this if your output is in a different folder
+          path: './build'  # Adjust this if your output is in a different folder
 
   deploy:
     needs: build
