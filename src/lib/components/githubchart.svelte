@@ -19,6 +19,7 @@
         img {
             max-width: 97.5%;
             width: 100%;
+            aspect-ratio: 51 / 8;
         
             display: block;
             align-items: flex-start;
