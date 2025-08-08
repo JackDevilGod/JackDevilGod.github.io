@@ -13,11 +13,13 @@
 		{route: '/about', name: 'About'},
 		{route: '/contact', name: 'Contact'}
 		];
+	
+	let currentPage = $derived(main_pages.find(p => p.route == $page.url.pathname));
 </script>
 
 <svelte:head>
 	<meta name="description" content="Simple portfolio website." />
-	<title>{$page.url.pathname}</title>
+	<title>{currentPage ? currentPage.name : 'Unknown Page'}</title>
 </svelte:head>
 
 <Header pages={main_pages}/>
