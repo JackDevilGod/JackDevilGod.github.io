@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {page} from '$app/stores'
+	import {page} from '$app/state'
 
 	import Header from '$lib/components/header.svelte';
 
@@ -14,7 +14,7 @@
 		{route: '/contact', name: 'Contact'}
 		];
 	
-	let currentPage = $derived(main_pages.find(p => p.route == $page.url.pathname));
+	let currentPage = $derived(main_pages.find(p => p.route == page.url.pathname));
 </script>
 
 <svelte:head>
