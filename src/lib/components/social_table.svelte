@@ -1,10 +1,18 @@
 <script>
+    import ClickableIcon from "./sub_components/clickable_icon.svelte";
 
-    let {height = 500} = $props()
+    import mail from '$lib/assets/social_icons/mail.png'
+
+    let socials = [
+        {link: "mailto:devilgods.696@gmail.com", icon: mail}
+    ];
 </script>
 <div>
-    <h1>1</h1>
-    <h2>2</h2>
+    {#each socials as {link, icon}}
+        <div class="social_icon">
+            <ClickableIcon link={link} image={icon} />
+        </div>
+    {/each}
 </div>
 
 <style>
@@ -14,5 +22,10 @@
 
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+
+    .social_icon {
+        width: 20%;
+        height: auto;
     }
 </style>
