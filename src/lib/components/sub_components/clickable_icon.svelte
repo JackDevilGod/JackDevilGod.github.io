@@ -1,9 +1,9 @@
 <script>
-    let {link, image} = $props()
+    let {link, image, name='social'} = $props()
 </script>
 
-<a target='_blank' href="{link}">
-    <img src="{image}"/>
+<a target='_blank' href="{link}" aria-label="social link">
+    <img src="{image}" alt="{name}"/>
 </a>
 
 <style>
