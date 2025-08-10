@@ -29,7 +29,6 @@ development hell.</pre>
 
 	<nav id='mobile_navbar'>
 		<BurgerIcon bind:open={open}/>
-	
 
 		{#if open} 
 			<ul>
