@@ -183,7 +183,7 @@ development hell.</pre>
 		}
 	}
 
-	@media only screen and (max-width: 1150px) {
+	@media only screen and (max-width: 1200px) {
 		#desktop_navbar {
 			display: none;
 		}
