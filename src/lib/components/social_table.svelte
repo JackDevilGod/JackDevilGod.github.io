@@ -1,12 +1,15 @@
 <script>
-    import ClickableIcon from "./sub_components/clickable_icon.svelte";
+    import ClickableIcon from "$lib/components/sub_components/clickable_icon.svelte";
 
     import mail from '$lib/assets/social_icons/mail.png'
+    import discord from '$lib/assets/social_icons/discord.png'
 
     let socials = [
-        {link: "mailto:devilgods.696@gmail.com", icon: mail}
+        {link: "mailto:devilgods.696@gmail.com", icon: mail},
+        {link: 'https://discord.gg/3xvuqWCfuu', icon: discord}
     ];
 </script>
+
 <div>
     {#each socials as {link, icon}}
         <div class="social_icon">
@@ -22,6 +25,8 @@
 
         display: grid;
         grid-template-columns: auto auto auto;
+        grid-auto-rows: auto;
+        grid-auto-columns: auto;
     }
 
     .social_icon {
