@@ -23,6 +23,8 @@
         width: 100%;
         height: 100%;
 
+        min-width: 100px;
+
         display: grid;
         grid-template-columns: auto auto auto;
         grid-auto-rows: auto;
