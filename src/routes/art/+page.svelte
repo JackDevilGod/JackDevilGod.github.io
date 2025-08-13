@@ -16,10 +16,13 @@
 
 <style>
     #galleries_grid {
+        margin-left: 0;
         width: 100%;
         height: auto;
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        align-content: center;
     }
 </style>
