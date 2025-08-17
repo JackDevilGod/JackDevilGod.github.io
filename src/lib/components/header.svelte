@@ -10,7 +10,10 @@
 
 <header>
 	<div >
-		<img src="{dg_logo}" alt="DG Logo">
+		<a href="/" id='header_logo'>
+			<img src="{dg_logo}" alt="DG Logo">
+		</a>
+
 		<pre class='header_text'>
 A page in
 development hell.</pre>
@@ -26,11 +29,10 @@ development hell.</pre>
 
 	<nav id='mobile_navbar'>
 		<BurgerIcon bind:open={open}/>
-	
 
 		{#if open} 
 			<ul>
-				{#each main_pages as {route, name}}
+				{#each pages as {route, name}}
 					<li><a href="{route}">{name}</a></li>
 				{/each}
 			</ul>
@@ -79,14 +81,19 @@ development hell.</pre>
 		word-wrap: normal;
 	}
 
-	img {
+	#header_logo {
 		width: auto;
 		height: 75%;
-		border-radius: 5px;
 
-		float: left;
+			img {
+				width: auto;
+				height: 100%;
+				border-radius: 5px;
 
-		background-color: #dddddd;
+				float: left;
+
+				background-color: #dddddd;
+			}
 	}
 
 	#desktop_navbar{
