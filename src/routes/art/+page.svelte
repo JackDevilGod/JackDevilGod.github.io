@@ -1,21 +1,16 @@
 <script>
-    import GalleryButton from "$lib/components/art/gallery_button.svelte";
+    import ImageFrame from "$lib/components/art/image_frame.svelte";
 
-    let images = import.meta.glob("$lib/assets/art/*.jpg");
+    const images = Object.values(import.meta.glob('$lib/assets/art/*.jpg', { query: 'url', eager: true }));
 </script>
 
-<div class="content">
-    {#each images as img}
-        <img src="{img}" >
-    {/each}
-</div>
-
-<!--
 <div class='content'>
     <h1 class="page_header">Art or something</h1>
 
     <div id='galleries_grid'>
-    
+        {#each images as (img)}
+            <ImageFrame path="{img}">
+        {/each}
     </div>
 </div>
 
@@ -31,4 +26,3 @@
         align-content: center;
     }
 </style>
--->
