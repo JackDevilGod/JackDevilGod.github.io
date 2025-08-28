@@ -1,16 +1,21 @@
 <script>
     import GalleryButton from "$lib/components/art/gallery_button.svelte";
 
-    let { data } = $props();
+    let images = import.meta.glob("$lib/assets/art/*.jpg");
 </script>
 
+<div class="content">
+    {#each images as img}
+        <img src="{img}" >
+    {/each}
+</div>
+
+<!--
 <div class='content'>
     <h1 class="page_header">Art or something</h1>
 
     <div id='galleries_grid'>
-        {#each data.galleries as {title, route}}
-            <GalleryButton title={title} folder_name={route} />
-        {/each}
+    
     </div>
 </div>
 
@@ -26,3 +31,4 @@
         align-content: center;
     }
 </style>
+-->
