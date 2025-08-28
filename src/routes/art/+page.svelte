@@ -8,8 +8,8 @@
     <h1 class="page_header">Art or something</h1>
 
     <div id='galleries_grid'>
-        {#each images as (img)}
-            <ImageFrame path="{img}">
+        {#each images as img}
+            <ImageFrame path={img} />
         {/each}
     </div>
 </div>

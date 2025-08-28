@@ -2,4 +2,4 @@
     let {path} = $props();
 </script>
 
-<img src="{path}">
+<img src="{path}" alt="some art">
