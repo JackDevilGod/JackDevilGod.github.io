@@ -1,8 +1,7 @@
 <script>
-    import ImageFrame from "$lib/components/art/image_frame.svelte";
-
-    const images = import.meta.glob('$lib/assets/art/*.jpg', 
-                                                  { query: 'url', eager: true });
+    const images = Object.values(
+        import.meta.glob('$lib/assets/art/*.{jpg,jpeg,png,gif,webp}', { as: 'url', eager: true })
+    );
 </script>
 
 <div class='content'>
@@ -10,7 +9,9 @@
 
     <div id='galleries_grid'>
         {#each images as img}
-            <p>"{img}"</p>
+            <figure>
+                <img src={img} alt="art" />
+            </figure>
         {/each}
     </div>
 </div>
