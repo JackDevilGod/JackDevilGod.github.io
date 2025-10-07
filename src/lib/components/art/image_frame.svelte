@@ -3,7 +3,10 @@
     export let path = '';
 </script>
 
-<img src={path} class="frame" alt="art" loading="lazy" />
+<a href={path}>
+    <img src={path} class="frame" alt="art" loading="lazy" />
+</a>
+
 
 <style>
     .frame {
