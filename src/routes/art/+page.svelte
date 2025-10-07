@@ -1,4 +1,6 @@
 <script>
+    import ImageFrame from "$lib/components/art/image_frame.svelte";
+
     const images = Object.values(
         import.meta.glob('$lib/assets/art/*.{jpg,jpeg,png,gif,webp}', { as: 'url', eager: true })
     );
@@ -10,7 +12,7 @@
     <div id='galleries_grid'>
         {#each images as img}
             <figure>
-                <img src={img} alt="art" />
+                <ImageFrame path={img} />
             </figure>
         {/each}
     </div>
