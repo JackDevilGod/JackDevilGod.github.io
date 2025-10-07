@@ -2,7 +2,7 @@
     import BurgerIcon from '$lib/components/burger_icon.svelte';
 
     import dg_logo from '$lib/assets/logo_dg.png';
-    
+
     let { pages = [{route: '/', name: 'Home'}]} = $props();
     
 	let open = $state(false);
@@ -183,7 +183,7 @@ development hell.</pre>
 		}
 	}
 
-	@media only screen and (max-width: 1150px) {
+	@media only screen and (max-width: 1200px) {
 		#desktop_navbar {
 			display: none;
 		}
