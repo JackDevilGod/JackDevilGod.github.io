@@ -3,7 +3,7 @@
 
     <p>
         This will just be a small crappy static website for some kind of use. 
-        currently using no framework or any industry standards. 
+        currently using Svelte.
     </p>
 
     <pre>
