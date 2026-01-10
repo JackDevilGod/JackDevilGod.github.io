@@ -76,38 +76,39 @@
 			}
 		} 
 	}
+    
 
 	#mobile_navbar {
 		display: none;
 		flex-direction: column;
 		position: relative;
-		align-items: flex-end;
+		align-items: center;
 
 		ul {
 			width: 300px;
 			height: auto;
-			
-			margin-top: 100px;
-			margin-right: -20px;
-			padding-left: 0;
 
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			position: absolute;
-			align-content: center;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-20px);
+
+            padding: 0;
 
 			list-style: none;
 			background-color: #080808;
 			opacity: 80%;
 
 			box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
-			border-radius: 0 0 0 10px;
+			border-radius: 10px;
 			li {
 				width: 100%;
 				height: auto;
 	
 				text-align: center;
-        		margin-bottom: 10px;
 
 				a {
 					display: block;
