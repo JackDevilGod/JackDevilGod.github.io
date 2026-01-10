@@ -1,9 +1,14 @@
 <script>
-	import MobileNavBar from '../nav componant/mobile navbar.svelte';
+	import MobileNavBar from '../nav component/mobile navbar.svelte';
 
 	import dg_logo from '$lib/assets/logo_dg.png';
 
-	let { pages = [{ route: '/', name: 'Home' }] } = $props();
+	let {
+		main_pages = [{ route: '/', name: 'Home' }],
+		extra_pages = [{ route: '/', name: 'Home' }]
+	} = $props();
+
+	let pages = main_pages.concat(extra_pages);
 </script>
 
 <header>
@@ -19,10 +24,14 @@ development hell.</pre>
 
 	<nav id="desktop_navbar">
 		<ul>
-			{#each pages as { route, name } (route)}
+			{#each main_pages as { route, name } (route)}
 				<li><a href={route}>{name}</a></li>
 			{/each}
 		</ul>
+
+		<nav id="navbar_burger">
+			<MobileNavBar pages={extra_pages} transformX="-250px" transformY="180px" />
+		</nav>
 	</nav>
 
 	<nav id="mobile_navbar">
@@ -117,6 +126,12 @@ development hell.</pre>
 				background-color: rgb(51, 51, 51);
 			}
 		}
+	}
+
+	#navbar_burger {
+		margin-right: 20px;
+		height: auto;
+		align-content: center;
 	}
 
 	#mobile_navbar {
