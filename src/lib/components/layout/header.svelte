@@ -1,5 +1,5 @@
 <script>
-	import BurgerIcon from '$lib/components/burger_icon.svelte';
+	import BurgerIcon from '../nav componant/burger_icon.svelte';
 
 	import dg_logo from '$lib/assets/logo_dg.png';
 
