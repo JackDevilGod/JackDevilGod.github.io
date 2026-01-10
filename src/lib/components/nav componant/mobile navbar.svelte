@@ -1,24 +1,28 @@
 <script>
-    import BurgerIcon from "./burger_icon.svelte";
+	import BurgerIcon from './burger_icon.svelte';
 
-    let { pages = [{ route: '/', name: 'Home' }], transformX = '-50%', transformY = '-20px' } = $props();
+	let {
+		pages = [{ route: '/', name: 'Home' }],
+		transformX = '-50%',
+		transformY = '-20px'
+	} = $props();
 	let open = $state(false);
 </script>
 
 <nav id="mobile_navbar">
-		<BurgerIcon bind:open />
+	<BurgerIcon bind:open />
 
-		{#if open}
-			<ul style="transform: translateX({transformX}) translateY({transformY});">
-				{#each pages as { route, name } (route)}
-					<li><a href={route}>{name}</a></li>
-				{/each}
-			</ul>
-		{/if}
+	{#if open}
+		<ul style="transform: translateX({transformX}) translateY({transformY});">
+			{#each pages as { route, name } (route)}
+				<li><a href={route}>{name}</a></li>
+			{/each}
+		</ul>
+	{/if}
 </nav>
 
 <style>
-    #mobile_navbar {
+	#mobile_navbar {
 		display: flex;
 		flex-direction: column;
 		position: relative;
