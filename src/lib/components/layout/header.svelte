@@ -26,7 +26,7 @@ development hell.</pre>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages} transformX="-250px" transformY="480px"/>
+		<MobileNavBar {pages} transformX="-250px" transformY="480px" />
 	</nav>
 </header>
 
