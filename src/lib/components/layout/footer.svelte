@@ -1,10 +1,12 @@
 <script>
-	import MobileNavBar from '$lib/components/nav componant/mobile navbar.svelte';
+	import MobileNavBar from '$lib/components/nav component/mobile navbar.svelte';
 
-	let { main_pages = [{ route: '/', name: 'Home' }] ,
-		  extra_pages = [{ route: '/', name: 'Home' }]} = $props();
+	let {
+		main_pages = [{ route: '/', name: 'Home' }],
+		extra_pages = [{ route: '/', name: 'Home' }]
+	} = $props();
 
-	let pages = main_pages.concat(extra_pages)
+	let pages = main_pages.concat(extra_pages);
 </script>
 
 <header>
@@ -15,7 +17,7 @@
 			{/each}
 		</ul>
 
-        <nav id="navbar_burger">
+		<nav id="navbar_burger">
 			<MobileNavBar pages={extra_pages} transformX="-50%" transformY="-20px" />
 		</nav>
 	</nav>
@@ -73,7 +75,7 @@
 		}
 	}
 
-    #navbar_burger {
+	#navbar_burger {
 		margin-right: 20px;
 		height: auto;
 		align-content: center;

@@ -1,12 +1,14 @@
 <script>
-	import MobileNavBar from '../nav componant/mobile navbar.svelte';
+	import MobileNavBar from '../nav component/mobile navbar.svelte';
 
 	import dg_logo from '$lib/assets/logo_dg.png';
 
-	let { main_pages = [{ route: '/', name: 'Home' }] ,
-		  extra_pages = [{ route: '/', name: 'Home' }]} = $props();
+	let {
+		main_pages = [{ route: '/', name: 'Home' }],
+		extra_pages = [{ route: '/', name: 'Home' }]
+	} = $props();
 
-	let pages = main_pages.concat(extra_pages)
+	let pages = main_pages.concat(extra_pages);
 </script>
 
 <header>

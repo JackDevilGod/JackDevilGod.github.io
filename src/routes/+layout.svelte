@@ -11,7 +11,7 @@
 		{ route: '/projects', name: 'Projects' },
 		{ route: '/art', name: 'Art' },
 		{ route: '/youtube', name: 'Youtube' },
-		{ route: '/3dprinting', name: '3d printing' },
+		{ route: '/3dprinting', name: '3d printing' }
 	];
 
 	const extra_pages = [
@@ -19,7 +19,9 @@
 		{ route: '/contact', name: 'Contact' }
 	];
 
-	let currentPage = $derived(main_pages.concat(extra_pages).find((p) => p.route == page.url.pathname));
+	let currentPage = $derived(
+		main_pages.concat(extra_pages).find((p) => p.route == page.url.pathname)
+	);
 </script>
 
 <svelte:head>
@@ -27,8 +29,8 @@
 	<title>{currentPage ? currentPage.name : 'Unknown Page'}</title>
 </svelte:head>
 
-<Header main_pages={main_pages} extra_pages={extra_pages}/>
+<Header {main_pages} {extra_pages} />
 
 {@render children?.()}
 
-<Footer main_pages={main_pages} extra_pages={extra_pages} />
+<Footer {main_pages} {extra_pages} />
