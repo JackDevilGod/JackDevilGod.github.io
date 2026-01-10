@@ -11,7 +11,7 @@
 </script>
 
 <div>
-	{#each socials as { link, icon }}
+	{#each socials as { link, icon } (link)}
 		<div class="social_icon">
 			<ClickableIcon {link} image={icon} />
 		</div>

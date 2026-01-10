@@ -22,7 +22,7 @@
 	aria-label={arialabel}
 	aria-expanded={open}
 >
-	{#each amount as id}
+	{#each amount as id (id)}
 		<div id="bar{id}" class="burger_layer {state_class}"></div>
 	{/each}
 </button>

@@ -9,7 +9,7 @@
 <header>
 	<nav id="desktop_navbar">
 		<ul>
-			{#each pages as { route, name }}
+			{#each pages as { route, name } (route)}
 				<li><a href={route}>{name}</a></li>
 			{/each}
 		</ul>
@@ -20,7 +20,7 @@
 
 		{#if open}
 			<ul>
-				{#each pages as { route, name }}
+				{#each pages as { route, name } (route)}
 					<li><a href={route}>{name}</a></li>
 				{/each}
 			</ul>

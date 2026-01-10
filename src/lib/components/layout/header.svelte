@@ -21,7 +21,7 @@ development hell.</pre>
 
 	<nav id="desktop_navbar">
 		<ul>
-			{#each pages as { route, name }}
+			{#each pages as { route, name } (route)}
 				<li><a href={route}>{name}</a></li>
 			{/each}
 		</ul>
@@ -32,7 +32,7 @@ development hell.</pre>
 
 		{#if open}
 			<ul>
-				{#each pages as { route, name }}
+				{#each pages as { route, name } (route)}
 					<li><a href={route}>{name}</a></li>
 				{/each}
 			</ul>
