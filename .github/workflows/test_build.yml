@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Format code
+        run: npm run format
+
       - name: Verify site (typecheck + lint)
         run: |
           # Run svelte/type checks and linting to validate the project will build
