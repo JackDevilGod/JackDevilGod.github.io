@@ -1,7 +1,8 @@
 <script lang="ts">
 	import {page} from '$app/state'
 
-	import Header from '$lib/components/header.svelte';
+	import Header from '$lib/components/layout/header.svelte';
+	import Footer from '$lib/components/layout/footer.svelte';
 
 	let { children } = $props();
 
@@ -26,3 +27,5 @@
 <Header pages={main_pages}/>
 
 {@render children?.()}
+
+<Footer pages={main_pages}/>
