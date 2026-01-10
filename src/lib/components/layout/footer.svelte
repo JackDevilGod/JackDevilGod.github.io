@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import MobileNavBar from '$lib/components/nav component/mobile navbar.svelte';
 
 	let {
@@ -14,7 +14,7 @@
 	<nav id="desktop_navbar">
 		<ul>
 			{#each main_pages as { route, name } (route)}
-				<li><a href="{base}{route}">{name}</a></li>
+				<li><a href={resolve(route)}>{name}</a></li>
 			{/each}
 		</ul>
 

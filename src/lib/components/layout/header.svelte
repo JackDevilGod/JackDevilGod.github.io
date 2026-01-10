@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import MobileNavBar from '../nav component/mobile navbar.svelte';
 
 	import dg_logo from '$lib/assets/logo_dg.png';
@@ -14,7 +14,7 @@
 
 <header>
 	<div>
-		<a href="{base}/" id="header_logo">
+		<a href={resolve('/')} id="header_logo">
 			<img src={dg_logo} alt="DG Logo" />
 		</a>
 
@@ -26,7 +26,7 @@ development hell.</pre>
 	<nav id="desktop_navbar">
 		<ul>
 			{#each main_pages as { route, name } (route)}
-				<li><a href="{base}{route}">{name}</a></li>
+				<li><a href={resolve(route)}>{name}</a></li>
 			{/each}
 		</ul>
 
