@@ -1,5 +1,5 @@
 <script>
-	import BurgerIcon from '../nav componant/burger_icon.svelte';
+	import MobileNavBar from '../nav componant/mobile navbar.svelte';
 
 	import dg_logo from '$lib/assets/logo_dg.png';
 
@@ -28,15 +28,7 @@ development hell.</pre>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<BurgerIcon bind:open />
-
-		{#if open}
-			<ul>
-				{#each pages as { route, name } (route)}
-					<li><a href={route}>{name}</a></li>
-				{/each}
-			</ul>
-		{/if}
+		<MobileNavBar {pages} transformX="-50%" transformY="0"/>
 	</nav>
 </header>
 
@@ -130,56 +122,8 @@ development hell.</pre>
 	}
 
 	#mobile_navbar {
-		display: flex;
-		flex-direction: column;
-		position: relative;
-		align-items: center;
-
+		display: none;
 		margin-right: 20px;
-
-		ul {
-			width: 300px;
-			height: auto;
-
-			margin-top: 100px;
-			margin-right: -20px;
-			padding-left: 0;
-
-			display: flex;
-			flex-direction: column;
-			position: absolute;
-			align-content: center;
-
-			list-style: none;
-			background-color: #080808;
-			opacity: 80%;
-
-			box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
-			border-radius: 0 0 0 10px;
-			li {
-				width: 100%;
-				height: auto;
-
-				text-align: center;
-				margin-bottom: 10px;
-
-				a {
-					display: block;
-					width: 100%;
-					text-decoration: none;
-
-					padding: 12px 0;
-					font-size: x-large;
-
-					color: #f7f7f7;
-				}
-
-				a:hover {
-					background-color: #6d6d6d;
-					text-decoration: underline;
-				}
-			}
-		}
 	}
 
 	@media only screen and (max-width: 1200px) {
