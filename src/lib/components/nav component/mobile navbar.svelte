@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import BurgerIcon from './burger_icon.svelte';
 
 	let {
@@ -15,7 +16,7 @@
 	{#if open}
 		<ul style="transform: translateX({transformX}) translateY({transformY});">
 			{#each pages as { route, name } (route)}
-				<li><a href={route}>{name}</a></li>
+				<li><a href={resolve(route)}>{name}</a></li>
 			{/each}
 		</ul>
 	{/if}

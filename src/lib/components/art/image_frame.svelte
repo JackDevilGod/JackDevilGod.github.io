@@ -1,9 +1,11 @@
 <script>
+	import { base } from '$app/paths';
 	// accept a single `path` prop (URL to the image)
 	export let path = '';
 </script>
 
-<a href={path}>
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+<a href="{base}{path}">
 	<img src={path} class="frame" alt="art" loading="lazy" />
 </a>
 

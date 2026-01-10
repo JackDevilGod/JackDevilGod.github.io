@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import MobileNavBar from '../nav component/mobile navbar.svelte';
 
 	import dg_logo from '$lib/assets/logo_dg.png';
@@ -8,12 +9,12 @@
 		extra_pages = [{ route: '/', name: 'Home' }]
 	} = $props();
 
-	let pages = main_pages.concat(extra_pages);
+	let pages = $derived(main_pages.concat(extra_pages));
 </script>
 
 <header>
 	<div>
-		<a href="/" id="header_logo">
+		<a href={resolve('/')} id="header_logo">
 			<img src={dg_logo} alt="DG Logo" />
 		</a>
 
@@ -25,7 +26,7 @@ development hell.</pre>
 	<nav id="desktop_navbar">
 		<ul>
 			{#each main_pages as { route, name } (route)}
-				<li><a href={route}>{name}</a></li>
+				<li><a href={resolve(route)}>{name}</a></li>
 			{/each}
 		</ul>
 

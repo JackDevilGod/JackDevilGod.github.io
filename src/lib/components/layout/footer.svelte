@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import MobileNavBar from '$lib/components/nav component/mobile navbar.svelte';
 
 	let {
@@ -6,14 +7,14 @@
 		extra_pages = [{ route: '/', name: 'Home' }]
 	} = $props();
 
-	let pages = main_pages.concat(extra_pages);
+	let pages = $derived(main_pages.concat(extra_pages));
 </script>
 
 <header>
 	<nav id="desktop_navbar">
 		<ul>
 			{#each main_pages as { route, name } (route)}
-				<li><a href={route}>{name}</a></li>
+				<li><a href={resolve(route)}>{name}</a></li>
 			{/each}
 		</ul>
 
