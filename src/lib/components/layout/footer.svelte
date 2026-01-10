@@ -14,7 +14,7 @@
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages} />
+		<MobileNavBar {pages} transformX="-50%" transformY="-20px"/>
 	</nav>
 </header>
 

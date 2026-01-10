@@ -1,7 +1,7 @@
 <script>
     import BurgerIcon from "./burger_icon.svelte";
 
-    let { pages = [{ route: '/', name: 'Home' }] } = $props();
+    let { pages = [{ route: '/', name: 'Home' }], transformX = '-50%', transformY = '-20px' } = $props();
 	let open = $state(false);
 </script>
 
@@ -9,7 +9,7 @@
 		<BurgerIcon bind:open />
 
 		{#if open}
-			<ul>
+			<ul style="transform: translateX({transformX}) translateY({transformY});">
 				{#each pages as { route, name } (route)}
 					<li><a href={route}>{name}</a></li>
 				{/each}
@@ -34,7 +34,6 @@
 			position: absolute;
 			bottom: 100%;
 			left: 50%;
-			transform: translateX(-50%) translateY(-20px);
 
 			padding: 0;
 

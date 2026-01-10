@@ -130,10 +130,10 @@ development hell.</pre>
 	}
 
 	#mobile_navbar {
-		display: none;
+		display: flex;
 		flex-direction: column;
 		position: relative;
-		align-items: flex-end;
+		align-items: center;
 
 		margin-right: 20px;
 
