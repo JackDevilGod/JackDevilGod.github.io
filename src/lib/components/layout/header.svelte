@@ -1,11 +1,14 @@
 <script>
-	import BurgerIcon from '$lib/components/burger_icon.svelte';
+	import MobileNavBar from '../nav component/mobile navbar.svelte';
 
 	import dg_logo from '$lib/assets/logo_dg.png';
 
-	let { pages = [{ route: '/', name: 'Home' }] } = $props();
+	let {
+		main_pages = [{ route: '/', name: 'Home' }],
+		extra_pages = [{ route: '/', name: 'Home' }]
+	} = $props();
 
-	let open = $state(false);
+	let pages = main_pages.concat(extra_pages);
 </script>
 
 <header>
@@ -21,22 +24,18 @@ development hell.</pre>
 
 	<nav id="desktop_navbar">
 		<ul>
-			{#each pages as { route, name } (route)}
+			{#each main_pages as { route, name } (route)}
 				<li><a href={route}>{name}</a></li>
 			{/each}
 		</ul>
+
+		<nav id="navbar_burger">
+			<MobileNavBar pages={extra_pages} transformX="-250px" transformY="180px" />
+		</nav>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<BurgerIcon bind:open />
-
-		{#if open}
-			<ul>
-				{#each pages as { route, name } (route)}
-					<li><a href={route}>{name}</a></li>
-				{/each}
-			</ul>
-		{/if}
+		<MobileNavBar {pages} transformX="-250px" transformY="480px" />
 	</nav>
 </header>
 
@@ -129,57 +128,15 @@ development hell.</pre>
 		}
 	}
 
+	#navbar_burger {
+		margin-right: 20px;
+		height: auto;
+		align-content: center;
+	}
+
 	#mobile_navbar {
 		display: none;
-		flex-direction: column;
-		position: relative;
-		align-items: flex-end;
-
 		margin-right: 20px;
-
-		ul {
-			width: 300px;
-			height: auto;
-
-			margin-top: 100px;
-			margin-right: -20px;
-			padding-left: 0;
-
-			display: flex;
-			flex-direction: column;
-			position: absolute;
-			align-content: center;
-
-			list-style: none;
-			background-color: #080808;
-			opacity: 80%;
-
-			box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
-			border-radius: 0 0 0 10px;
-			li {
-				width: 100%;
-				height: auto;
-
-				text-align: center;
-				margin-bottom: 10px;
-
-				a {
-					display: block;
-					width: 100%;
-					text-decoration: none;
-
-					padding: 12px 0;
-					font-size: x-large;
-
-					color: #f7f7f7;
-				}
-
-				a:hover {
-					background-color: #6d6d6d;
-					text-decoration: underline;
-				}
-			}
-		}
 	}
 
 	@media only screen and (max-width: 1200px) {
