@@ -33,8 +33,9 @@ jobs:
       - name: Format code
         run: npm run format
 
-      - name: Verify site (typecheck + lint)
-        run: |
-          # Run svelte/type checks and linting to validate the project will build
-          npm run check
-          npm run lint
+      - name: Check types
+        run: npm run check
+
+      - name: Lint code
+        run: npm run lint
+
