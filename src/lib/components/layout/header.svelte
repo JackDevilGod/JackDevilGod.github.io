@@ -30,7 +30,7 @@ development hell.</pre>
 		</ul>
 
 		<nav id="navbar_burger">
-			<MobileNavBar pages={extra_pages} transformX="50%" transformY="20px" />
+			<MobileNavBar pages={extra_pages} transformX="-250px" transformY="180px" />
 		</nav>
 	</nav>
 

@@ -16,7 +16,7 @@
 
 	const extra_pages = [
 		{ route: '/about', name: 'About' },
-		{ route: '/contact', name: 'Contact' }
+		{ route: '/contact', name: 'Contact' },
 	];
 
 	let currentPage = $derived(
