@@ -5,7 +5,7 @@
 	const base_path = '/art/';
 </script>
 
-<!-- svelte-eslint-disable svelte/no-navigation-without-resolve -->
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 <a href="{base}{base_path}{folder_name}">
 	<h>{title}</h>
 </a>

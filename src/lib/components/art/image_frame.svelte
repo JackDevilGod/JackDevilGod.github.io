@@ -4,7 +4,7 @@
 	export let path = '';
 </script>
 
-<!-- svelte-eslint-disable svelte/no-navigation-without-resolve -->
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 <a href="{base}{path}">
 	<img src={path} class="frame" alt="art" loading="lazy" />
 </a>
