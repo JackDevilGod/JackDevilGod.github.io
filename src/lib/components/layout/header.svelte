@@ -1,45 +1,44 @@
 <script>
-    import BurgerIcon from '$lib/components/burger_icon.svelte';
+	import BurgerIcon from '$lib/components/burger_icon.svelte';
 
-    import dg_logo from '$lib/assets/logo_dg.png';
+	import dg_logo from '$lib/assets/logo_dg.png';
 
-    let { pages = [{route: '/', name: 'Home'}]} = $props();
-    
+	let { pages = [{ route: '/', name: 'Home' }] } = $props();
+
 	let open = $state(false);
 </script>
 
 <header>
-	<div >
-		<a href="/" id='header_logo'>
-			<img src="{dg_logo}" alt="DG Logo">
+	<div>
+		<a href="/" id="header_logo">
+			<img src={dg_logo} alt="DG Logo" />
 		</a>
 
-		<pre class='header_text'>
+		<pre class="header_text">
 A page in
 development hell.</pre>
 	</div>
 
-	<nav id='desktop_navbar'>
+	<nav id="desktop_navbar">
 		<ul>
-			{#each pages as {route, name}}
-				<li><a href="{route}">{name}</a></li>
+			{#each pages as { route, name }}
+				<li><a href={route}>{name}</a></li>
 			{/each}
 		</ul>
 	</nav>
 
-	<nav id='mobile_navbar'>
-		<BurgerIcon bind:open={open}/>
+	<nav id="mobile_navbar">
+		<BurgerIcon bind:open />
 
-		{#if open} 
+		{#if open}
 			<ul>
-				{#each pages as {route, name}}
-					<li><a href="{route}">{name}</a></li>
+				{#each pages as { route, name }}
+					<li><a href={route}>{name}</a></li>
 				{/each}
 			</ul>
 		{/if}
 	</nav>
 </header>
-
 
 <style>
 	header {
@@ -85,18 +84,18 @@ development hell.</pre>
 		width: auto;
 		height: 75%;
 
-			img {
-				width: auto;
-				height: 100%;
-				border-radius: 5px;
+		img {
+			width: auto;
+			height: 100%;
+			border-radius: 5px;
 
-				float: left;
+			float: left;
 
-				background-color: #dddddd;
-			}
+			background-color: #dddddd;
+		}
 	}
 
-	#desktop_navbar{
+	#desktop_navbar {
 		display: flex;
 
 		ul {
@@ -127,7 +126,7 @@ development hell.</pre>
 			li:hover {
 				background-color: rgb(51, 51, 51);
 			}
-		} 
+		}
 	}
 
 	#mobile_navbar {
@@ -141,7 +140,7 @@ development hell.</pre>
 		ul {
 			width: 300px;
 			height: auto;
-			
+
 			margin-top: 100px;
 			margin-right: -20px;
 			padding-left: 0;
@@ -155,14 +154,14 @@ development hell.</pre>
 			background-color: #080808;
 			opacity: 80%;
 
-			box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
+			box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
 			border-radius: 0 0 0 10px;
 			li {
 				width: 100%;
 				height: auto;
-	
+
 				text-align: center;
-        		margin-bottom: 10px;
+				margin-bottom: 10px;
 
 				a {
 					display: block;

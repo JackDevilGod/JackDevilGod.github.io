@@ -1,16 +1,16 @@
 <script>
-    let {link, image, name='social'} = $props()
+	let { link, image, name = 'social' } = $props();
 </script>
 
-<a target='_blank' href="{link}" aria-label="social link">
-    <img src="{image}" alt="{name}"/>
+<a target="_blank" href={link} aria-label="social link">
+	<img src={image} alt={name} />
 </a>
 
 <style>
-    img {
-        aspect-ratio: 1 / 1;
+	img {
+		aspect-ratio: 1 / 1;
 
-        width: 100%;
-        height: auto;
-    }
+		width: 100%;
+		height: auto;
+	}
 </style>

@@ -1,33 +1,32 @@
 <script>
-    import BurgerIcon from '$lib/components/burger_icon.svelte';
+	import BurgerIcon from '$lib/components/burger_icon.svelte';
 
-    let { pages = [{route: '/', name: 'Home'}]} = $props();
-    
+	let { pages = [{ route: '/', name: 'Home' }] } = $props();
+
 	let open = $state(false);
 </script>
 
 <header>
-	<nav id='desktop_navbar'>
+	<nav id="desktop_navbar">
 		<ul>
-			{#each pages as {route, name}}
-				<li><a href="{route}">{name}</a></li>
+			{#each pages as { route, name }}
+				<li><a href={route}>{name}</a></li>
 			{/each}
 		</ul>
 	</nav>
 
-	<nav id='mobile_navbar'>
-		<BurgerIcon bind:open={open}/>
+	<nav id="mobile_navbar">
+		<BurgerIcon bind:open />
 
-		{#if open} 
+		{#if open}
 			<ul>
-				{#each pages as {route, name}}
-					<li><a href="{route}">{name}</a></li>
+				{#each pages as { route, name }}
+					<li><a href={route}>{name}</a></li>
 				{/each}
 			</ul>
 		{/if}
 	</nav>
 </header>
-
 
 <style>
 	header {
@@ -42,7 +41,7 @@
 		align-items: center;
 	}
 
-	#desktop_navbar{
+	#desktop_navbar {
 		display: flex;
 		justify-content: center;
 
@@ -74,9 +73,8 @@
 			li:hover {
 				background-color: rgb(51, 51, 51);
 			}
-		} 
+		}
 	}
-    
 
 	#mobile_navbar {
 		display: none;
@@ -96,18 +94,18 @@
 			left: 50%;
 			transform: translateX(-50%) translateY(-20px);
 
-            padding: 0;
+			padding: 0;
 
 			list-style: none;
 			background-color: #080808;
 			opacity: 80%;
 
-			box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
+			box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
 			border-radius: 10px;
 			li {
 				width: 100%;
 				height: auto;
-	
+
 				text-align: center;
 
 				a {
