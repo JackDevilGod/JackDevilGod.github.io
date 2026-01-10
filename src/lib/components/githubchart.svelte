@@ -1,32 +1,32 @@
 <div id="github_chart_container">
-    <h3>Github activity</h3>
-    <img src="http://ghchart.rshah.org/Jackdevilgod" alt="Jackdevilgod's Github chart" />
+	<h3>Github activity</h3>
+	<img src="http://ghchart.rshah.org/Jackdevilgod" alt="Jackdevilgod's Github chart" />
 </div>
 
 <style>
-    #github_chart_container {
-        max-width: 98%;
+	#github_chart_container {
+		max-width: 98%;
 
-        background-color: rgb(19, 19, 19);
-        margin: 0 auto;
+		background-color: rgb(19, 19, 19);
+		margin: 0 auto;
 
-        h3 {
-            text-align: center;
+		h3 {
+			text-align: center;
 
-            font-size: clamp(1rem, 150%, 5rem);
-        }
+			font-size: clamp(1rem, 150%, 5rem);
+		}
 
-        img {
-            max-width: 97.5%;
-            width: 100%;
-            aspect-ratio: 51 / 8;
-        
-            display: block;
-            align-items: flex-start;
+		img {
+			max-width: 97.5%;
+			width: 100%;
+			aspect-ratio: 51 / 8;
 
-            margin: 5px auto 5px auto;
+			display: block;
+			align-items: flex-start;
 
-            padding-bottom: 20px;
-        }
-    }
+			margin: 5px auto 5px auto;
+
+			padding-bottom: 20px;
+		}
+	}
 </style>

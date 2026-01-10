@@ -4,7 +4,7 @@
 
 <h1>You encountered {page.status} error</h1>
 
-<h2>{page.error.message}</h2>
+<h2>{page.error?.message}</h2>
 
 <style>
 	* {

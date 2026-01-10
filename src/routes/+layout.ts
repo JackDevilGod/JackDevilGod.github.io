@@ -17,4 +17,3 @@ export const ssr = true;
 //The URL for the about page will be /about/ or /about with 'ignore' (not reccomended)
 // https://kit.svelte.dev/docs/page-options#trailingslash
 export const trailingSlash = 'never';
-
