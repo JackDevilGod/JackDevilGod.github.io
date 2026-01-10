@@ -1,10 +1,11 @@
 <script>
+	import { base } from '$app/paths';
 	let { title = 'lorem', folder_name = 'ipsum' } = $props();
 
 	const base_path = '/art/';
 </script>
 
-<a href="{base_path}{folder_name}">
+<a href="{base}{base_path}{folder_name}">
 	<h>{title}</h>
 </a>
 
