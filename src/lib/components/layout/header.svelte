@@ -4,8 +4,6 @@
 	import dg_logo from '$lib/assets/logo_dg.png';
 
 	let { pages = [{ route: '/', name: 'Home' }] } = $props();
-
-	let open = $state(false);
 </script>
 
 <header>
@@ -28,7 +26,7 @@ development hell.</pre>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages} transformX="-50%" transformY="0"/>
+		<MobileNavBar {pages} transformX="-250px" transformY="480px"/>
 	</nav>
 </header>
 
