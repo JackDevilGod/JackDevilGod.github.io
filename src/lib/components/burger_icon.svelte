@@ -2,7 +2,7 @@
 	const amount = [1, 2, 3];
 	let state_class = $state('');
 
-	let { open = $bindable(false), arialabel = 'toggle menu'} = $props();
+	let { open = $bindable(false), arialabel = 'toggle menu' } = $props();
 
 	const onClick = () => {
 		open = !open;
@@ -15,22 +15,27 @@
 	};
 </script>
 
-
-<button id='burger' class="{state_class}" onclick={onClick} aria-label="{arialabel}" aria-expanded="{open}">
-	{#each  amount as id}
-		<div id='bar{id}' class='burger_layer {state_class}'></div>
+<button
+	id="burger"
+	class={state_class}
+	onclick={onClick}
+	aria-label={arialabel}
+	aria-expanded={open}
+>
+	{#each amount as id (id)}
+		<div id="bar{id}" class="burger_layer {state_class}"></div>
 	{/each}
 </button>
 
 <style>
 	.burger_layer {
-        width: 35px;
-        height: 3px;
+		width: 35px;
+		height: 3px;
 
-        background-color: white;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
+		background-color: white;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
 
 	#burger {
 		height: 100%;
@@ -46,8 +51,8 @@
 	}
 
 	:root {
-    	--transition-duration: 400ms;
-  	}
+		--transition-duration: 400ms;
+	}
 
 	.open {
 		#bar1 {
