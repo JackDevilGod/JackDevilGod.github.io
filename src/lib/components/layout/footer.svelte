@@ -19,12 +19,12 @@
 		</ul>
 
 		<nav id="navbar_burger">
-			<MobileNavBar pages={extra_pages} transformX="-50%" transformY="-20px" />
+			<MobileNavBar pages={extra_pages} />
 		</nav>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages} transformX="-50%" transformY="-20px" />
+		<MobileNavBar {pages}  />
 	</nav>
 </footer>
 
