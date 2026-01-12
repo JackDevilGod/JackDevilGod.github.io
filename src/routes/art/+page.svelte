@@ -2,7 +2,7 @@
 	import ImageFrame from '$lib/components/art/image_frame.svelte';
 
 	const images = Object.values(
-		import.meta.glob('$lib/assets/art/*.{jpg,jpeg,png,gif,webp}', { as: 'url', eager: true })
+		import.meta.glob('$lib/assets/art/*.{jpg,jpeg,png,gif,webp}', { query: '?url', import: 'default', eager: true })
 	);
 </script>
 
