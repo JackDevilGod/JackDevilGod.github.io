@@ -4,8 +4,6 @@
 
 	let {
 		pages = [{ route: '/', name: 'Home' }],
-		transformX = '-50%',
-		transformY = '-20px'
 	} = $props();
 	let open = $derived(false);
 
@@ -18,7 +16,7 @@
 	<BurgerIcon bind:open />
 
 	{#if open}
-		<ul style="transform: translateX({transformX}) translateY({transformY});">
+		<ul>
 			{#each pages as { route, name } (route)}
 				<li><a href={resolve(route)} onclick={onClick}>{name}</a></li>
 			{/each}
