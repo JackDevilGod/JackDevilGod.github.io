@@ -28,6 +28,8 @@
 		flex-direction: column;
 		position: relative;
 		align-items: center;
+		height: 100%;
+		width: auto;
 
 		ul {
 			width: 300px;
