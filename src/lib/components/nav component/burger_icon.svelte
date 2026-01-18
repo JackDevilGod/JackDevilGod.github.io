@@ -1,17 +1,12 @@
 <script>
 	const amount = [1, 2, 3];
-	let state_class = $state('');
 
 	let { open = $bindable(false), arialabel = 'toggle menu' } = $props();
 
+	let state_class = $derived(open ? 'open' : '');
+
 	const onClick = () => {
 		open = !open;
-
-		if (open) {
-			state_class = 'open';
-		} else {
-			state_class = '';
-		}
 	};
 </script>
 
