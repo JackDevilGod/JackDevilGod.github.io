@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ImageFrame from '$lib/components/art/image_frame.svelte';
 
-	const images: String[] = Object.values(
+	const images: string[] = Object.values(
 		import.meta.glob('$lib/assets/art/*.{jpg,jpeg,png,gif,webp}', {
 			query: '?url',
 			import: 'default',
