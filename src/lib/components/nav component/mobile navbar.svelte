@@ -20,10 +20,7 @@
 	{#if open}
 		<ul style="transform: translateX({transformX}) translateY({transformY});">
 			{#each pages as { route, name } (route)}
-				<li><a 
-					href={resolve(route)}
-					onclick={onClick}
-					>{name}</a></li>
+				<li><a href={resolve(route)} onclick={onClick}>{name}</a></li>
 			{/each}
 		</ul>
 	{/if}
