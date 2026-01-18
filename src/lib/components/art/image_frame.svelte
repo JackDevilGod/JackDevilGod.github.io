@@ -1,9 +1,11 @@
 <script lang="ts">
-	import { resolve } from "$app/paths";
-	let { path = '/' }: { path?: string } = $props();
+	import { resolve } from '$app/paths';
+	type Route = any;
+
+	let { path = '/' }: { path?: Route } = $props();
 </script>
 
-<a href={resolve(path as any)}>
+<a href={resolve(path)}>
 	<img src={path} class="frame" alt="art" loading="lazy" />
 </a>
 

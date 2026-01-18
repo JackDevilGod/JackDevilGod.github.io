@@ -8,7 +8,6 @@
 			eager: true
 		})
 	);
-
 </script>
 
 <div class="content">
