@@ -4,6 +4,7 @@
 
 	let {
 		pages = [{ route: '/', name: 'Home' }],
+		position = "bottom"
 	} = $props();
 	let open = $derived(false);
 
@@ -16,7 +17,7 @@
 	<BurgerIcon bind:open />
 
 	{#if open}
-		<ul>
+		<ul style="{position}:100%;">
 			{#each pages as { route, name } (route)}
 				<li><a href={resolve(route)} onclick={onClick}>{name}</a></li>
 			{/each}
@@ -41,8 +42,6 @@
 			flex-direction: column;
 			align-items: center;
 			position: absolute;
-			bottom: 100%;
-			left: 50%;
 
 			padding: 0;
 

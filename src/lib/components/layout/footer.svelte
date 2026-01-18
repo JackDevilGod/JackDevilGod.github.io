@@ -19,17 +19,17 @@
 		</ul>
 
 		<nav id="navbar_burger">
-			<MobileNavBar pages={extra_pages} />
+			<MobileNavBar pages={extra_pages} position="bottom"/>
 		</nav>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages}  />
+		<MobileNavBar {pages}  position="bottom"/>
 	</nav>
 </footer>
 
 <style>
-	header {
+	footer {
 		width: 100%;
 		height: 100px;
 
