@@ -1,9 +1,8 @@
-<script>
-	import { resolve } from '$app/paths';
-	let {path="/"} = $props();
+<script lang="ts">
+	let { path = '/' }: { path?: string } = $props();
 </script>
 
-<a href={resolve(path)}>
+<a href={path}>
 	<img src={path} class="frame" alt="art" loading="lazy" />
 </a>
 
