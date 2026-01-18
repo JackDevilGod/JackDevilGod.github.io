@@ -4,8 +4,8 @@
 
 	let {
 		pages = [{ route: '/', name: 'Home' }],
-		position = "bottom",
-		extra_style_list = "",
+		position = 'bottom',
+		extra_style_list = ''
 	} = $props();
 	let open = $derived(false);
 

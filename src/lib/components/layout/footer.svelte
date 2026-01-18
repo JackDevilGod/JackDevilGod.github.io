@@ -19,12 +19,12 @@
 		</ul>
 
 		<nav id="navbar_burger">
-			<MobileNavBar pages={extra_pages} position="bottom"/>
+			<MobileNavBar pages={extra_pages} position="bottom" />
 		</nav>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages}  position="bottom"/>
+		<MobileNavBar {pages} position="bottom" />
 	</nav>
 </footer>
 
