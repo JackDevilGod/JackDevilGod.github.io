@@ -7,7 +7,7 @@
 		transformX = '-50%',
 		transformY = '-20px'
 	} = $props();
-	let open = $state(false);
+	let open = $derived(false);
 
 	const onClick = () => {
 		open = false;
