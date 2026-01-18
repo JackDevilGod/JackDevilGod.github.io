@@ -1,6 +1,6 @@
 <script>
 	import { resolve } from '$app/paths';
-	export let path = '/';
+	let {path="/"} = $props();
 </script>
 
 <a href={resolve(path)}>
