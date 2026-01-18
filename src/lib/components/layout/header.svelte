@@ -31,12 +31,12 @@ development hell.</pre>
 		</ul>
 
 		<nav id="navbar_burger">
-			<MobileNavBar pages={extra_pages} position="top"/>
+			<MobileNavBar pages={extra_pages} position="top" extra_style_list="right:0;"/>
 		</nav>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages} position="top"/>
+		<MobileNavBar {pages} position="top" extra_style_list="right:0;"/>
 	</nav>
 </header>
 

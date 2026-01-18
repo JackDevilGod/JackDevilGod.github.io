@@ -84,6 +84,7 @@
 
 	#mobile_navbar {
 		display: none;
+		height: 100%;
 	}
 
 	@media only screen and (max-width: 1200px) {

@@ -4,7 +4,8 @@
 
 	let {
 		pages = [{ route: '/', name: 'Home' }],
-		position = "bottom"
+		position = "bottom",
+		extra_style_list = "",
 	} = $props();
 	let open = $derived(false);
 
@@ -17,7 +18,7 @@
 	<BurgerIcon bind:open />
 
 	{#if open}
-		<ul style="{position}:100%;">
+		<ul style="{position}:100%; {extra_style_list}">
 			{#each pages as { route, name } (route)}
 				<li><a href={resolve(route)} onclick={onClick}>{name}</a></li>
 			{/each}
