@@ -10,7 +10,7 @@
 	let pages = $derived(main_pages.concat(extra_pages));
 </script>
 
-<header>
+<footer>
 	<nav id="desktop_navbar">
 		<ul>
 			{#each main_pages as { route, name } (route)}
@@ -19,17 +19,17 @@
 		</ul>
 
 		<nav id="navbar_burger">
-			<MobileNavBar pages={extra_pages} transformX="-50%" transformY="-20px" />
+			<MobileNavBar pages={extra_pages} position="bottom" />
 		</nav>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages} transformX="-50%" transformY="-20px" />
+		<MobileNavBar {pages} position="bottom" />
 	</nav>
-</header>
+</footer>
 
 <style>
-	header {
+	footer {
 		width: 100%;
 		height: 100px;
 
@@ -84,6 +84,7 @@
 
 	#mobile_navbar {
 		display: none;
+		height: 100%;
 	}
 
 	@media only screen and (max-width: 1200px) {

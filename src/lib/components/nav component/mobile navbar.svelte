@@ -4,8 +4,8 @@
 
 	let {
 		pages = [{ route: '/', name: 'Home' }],
-		transformX = '-50%',
-		transformY = '-20px'
+		position = 'bottom',
+		extra_style_list = ''
 	} = $props();
 	let open = $derived(false);
 
@@ -18,7 +18,7 @@
 	<BurgerIcon bind:open />
 
 	{#if open}
-		<ul style="transform: translateX({transformX}) translateY({transformY});">
+		<ul style="{position}:100%; {extra_style_list}">
 			{#each pages as { route, name } (route)}
 				<li><a href={resolve(route)} onclick={onClick}>{name}</a></li>
 			{/each}
@@ -32,6 +32,8 @@
 		flex-direction: column;
 		position: relative;
 		align-items: center;
+		height: 100%;
+		width: auto;
 
 		ul {
 			width: 300px;
@@ -41,8 +43,6 @@
 			flex-direction: column;
 			align-items: center;
 			position: absolute;
-			bottom: 100%;
-			left: 50%;
 
 			padding: 0;
 
