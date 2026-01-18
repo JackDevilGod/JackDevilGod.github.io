@@ -10,7 +10,7 @@
 	let open = $state(false);
 
 	const onClick = () => {
-		open = !open;
+		open = false;
 	};
 </script>
 

@@ -6,13 +6,11 @@
 
 	const onClick = () => {
 		open = !open;
-
-		if (open) {
-			state_class = 'open';
-		} else {
-			state_class = '';
-		}
 	};
+
+	$effect(() => {
+		state_class = open ? 'open' : '';
+	});
 </script>
 
 <button
