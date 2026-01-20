@@ -11,7 +11,7 @@
 		{ route: '/projects', name: 'Projects' },
 		{ route: '/art', name: 'Art' },
 		{ route: '/youtube', name: 'Youtube' },
-		{ route: '/3dprinting', name: '3d printing' }
+		{ route: '/3d_printing', name: '3d printing' }
 	];
 
 	const extra_pages = [
