@@ -2,7 +2,7 @@
 	let { path = '/' }: { path?: string } = $props();
 </script>
 
-<img src={path} class="frame" alt="art" loading="lazy" />
+<enhanced:img src={path} class="frame" alt="art" loading="lazy" />
 
 <style>
 	.frame {
