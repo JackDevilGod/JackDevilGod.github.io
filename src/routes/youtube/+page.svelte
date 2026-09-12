@@ -3,7 +3,8 @@
 
 	<pre>
 I just mostly make throw away reaction content to anime.
-TBH it just more to keep me occupied each week for some time and force me to have some enjoyment.</pre>
+TBH it just more to keep me occupied each week for some time and force me to have some enjoyment.
+Also some boring stream in the weekend starting at utc+1 12:00.</pre>
 
 	<p>
 		If you want to check it out <a target="_blank" href="https://www.youtube.com/@JackDevilGod"
