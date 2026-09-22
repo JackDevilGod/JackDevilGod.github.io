@@ -10,8 +10,8 @@
 		{ route: '/', name: 'Home' },
 		{ route: '/projects', name: 'Projects' },
 		{ route: '/art', name: 'Art' },
-		{ route: '/youtube', name: 'Youtube' },
-		{ route: '/3d_printing', name: '3d printing' }
+		{ route: '/video', name: 'Video' },
+		{ route: '/engineering', name: 'Engineering' }
 	];
 
 	const extra_pages = [
