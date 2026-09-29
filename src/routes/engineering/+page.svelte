@@ -1,5 +1,5 @@
 <div class="content">
-	<h1 class="page_header">3d printing</h1>
+	<h1 class="center">3d printing</h1>
 
 	<p>
 	Got a 3d printer, kinda into 3d design, but mostly use it for printing other's designs.

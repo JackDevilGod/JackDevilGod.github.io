@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ImageFrame from '$lib/components/art/image_frame.svelte';
+	import ImageFrame from '$lib/components/content/art/image_frame.svelte';
 
 	const images: string[] = Object.values(
 		import.meta.glob('$lib/assets/art/*.{jpg,jpeg,png,gif,webp}', {
@@ -11,7 +11,7 @@
 </script>
 
 <div class="content">
-	<h1 class="page_header">Art or something</h1>
+	<h1 class="center">Art or something</h1>
 
 	<div id="galleries_grid">
 		{#each images as img (img)}

@@ -1,5 +1,5 @@
 <div class="content">
-	<h1 class="page_header">This is the about page</h1>
+	<h1 class="center">This is the about page</h1>
 
 	<pre>
 this is the about page.

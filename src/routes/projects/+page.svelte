@@ -3,7 +3,7 @@
 </script>
 
 <div class="content">
-	<h1 class="page_header">Projects Yay!</h1>
+	<h1 class="center">Projects Yay!</h1>
 
 	<pre>
 I like to code, but mostly small projects.
