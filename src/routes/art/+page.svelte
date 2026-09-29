@@ -11,7 +11,7 @@
 </script>
 
 <div class="content">
-	<h1 class="page_header">Art or something</h1>
+	<h1 class="center">Art or something</h1>
 
 	<div id="galleries_grid">
 		{#each images as img (img)}

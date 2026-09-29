@@ -3,7 +3,7 @@
 </script>
 
 <div class="content">
-	<h1 class="page_header">this is the contact page.</h1>
+	<h1 class="center">this is the contact page.</h1>
 
 	<div id="social_table">
 		<SocialTable />

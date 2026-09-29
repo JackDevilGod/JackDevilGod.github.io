@@ -1,5 +1,5 @@
 <div class="content">
-	<h1 class="page_header">Welcome to Heaven and Hell.</h1>
+	<h1 class="center">Welcome to Heaven and Hell.</h1>
 
 	<p>
 	    You, why are you here? Well I guess you should know me already from somewhere. 
