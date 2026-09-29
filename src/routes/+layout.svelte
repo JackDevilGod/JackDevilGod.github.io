@@ -6,23 +6,30 @@
 
 	let { children } = $props();
 
-	const main_pages = [
-		{ route: '/', name: 'Home' },
-		{ route: '/projects', name: 'Projects' },
-		{ route: '/art', name: 'Art' },
-		{ route: '/youtube', name: 'Youtube' },
-		{ route: '/3d_printing', name: '3d printing' }
+	const main_pages: string[] = [
+		'Home',
+		'Projects',
+		'Art',
+		'Youtube',
+		'3d printing'
 	];
 
-	const extra_pages = [
-		{ route: '/about', name: 'About' },
-		{ route: '/contact', name: 'Contact' }
+	const extra_pages: string[] = [
+		'About',
+		'Contact'
 	];
 
-	let pages = $derived(main_pages.concat(extra_pages));
-	let currentPage = $derived(
-		main_pages.concat(extra_pages).find((p) => p.route == page.url.pathname)
-	);
+	const all_pages: string[] = main_pages.concat(extra_pages);
+
+	const page_dict = {
+	"Home":       "/",
+	"Projects" :  "/projects",
+	"Art":        "/art",
+	"Youtube" :   "/youtube",
+	"3d printing": "/3d_printing",
+	'About':      "/about",
+	'Contract':   "/contact",
+	};
 </script>
 
 <svelte:head>
@@ -56,6 +63,13 @@ development hell.</pre>
 		<MobileNavBar {pages} position="top" extra_style_list="right:0;" />
 	</nav>
 </header>
+
+
+{@render children?.()}
+
+<footer>
+	<MobileNavBar {pages} position="bottom" />
+</footer>
 
 <style>
 	header {
@@ -183,9 +197,3 @@ development hell.</pre>
 		}
 	}
 </style>
-
-{@render children?.()}
-
-<footer>
-	<MobileNavBar {pages} position="bottom" />
-</footer>
