@@ -1,5 +1,6 @@
 <script lang="ts">
 	let { path = '/' }: { path?: string } = $props();
+	
 </script>
 
 <enhanced:img src={path} class="frame" alt="art" loading="lazy" />

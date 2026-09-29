@@ -1,20 +1,14 @@
 <script lang="ts">
 	import ImageFrame from '$lib/components/art/image_frame.svelte';
 
-	const images: string[] = Object.values(
-		import.meta.glob('$lib/assets/art/*.{jpg,jpeg,png,gif,webp}', {
-			query: '?url',
-			import: 'default',
-			eager: true
-		})
-	);
+	import art_list from "$lib/assets/art/_art.json"
 </script>
 
 <div class="content">
 	<h1 class="page_header">Art or something</h1>
 
 	<div id="galleries_grid">
-		{#each images as img (img)}
+		{#each art_list.art_pieces as img (img)}
 			<figure>
 				<ImageFrame path={img as string} />
 			</figure>
