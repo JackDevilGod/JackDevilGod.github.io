@@ -21,7 +21,7 @@
 
 	const all_pages: string[] = main_pages.concat(extra_pages);
 
-	const page_dict = {
+	const page_dict: Map<string, string> = {
 	"Home":       "/",
 	"Projects" :  "/projects",
 	"Art":        "/art",
@@ -29,6 +29,16 @@
 	"3d printing": "/3d_printing",
 	'About':      "/about",
 	'Contract':   "/contact",
+	};
+
+	const page_names: { [key: string]: string } = {};
+	for (const [name, route] of Object.entries(page_dict)) {
+		page_names[route] = name;
+	}
+
+	const currentPage = {
+		name: page_names[page.url.pathname],
+		path: page.url.pathname,
 	};
 </script>
 
@@ -49,18 +59,16 @@ development hell.</pre>
 
 	<nav id="desktop_navbar">
 		<ul>
-			{#each main_pages as { route, name } (route)}
-				<li><a href={resolve(route)}>{name}</a></li>
+			{#each main_pages as name (name)}
+				<li><a href={resolve(page_dict[name])}>{name}</a></li>
 			{/each}
 		</ul>
 
 		<nav id="navbar_burger">
-			<MobileNavBar pages={extra_pages} position="top" extra_style_list="right:0;" />
 		</nav>
 	</nav>
 
 	<nav id="mobile_navbar">
-		<MobileNavBar {pages} position="top" extra_style_list="right:0;" />
 	</nav>
 </header>
 
@@ -68,7 +76,6 @@ development hell.</pre>
 {@render children?.()}
 
 <footer>
-	<MobileNavBar {pages} position="bottom" />
 </footer>
 
 <style>
