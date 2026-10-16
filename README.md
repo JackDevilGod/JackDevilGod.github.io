@@ -1,38 +1,71 @@
-# sv
+# jackdevilgod.github.io
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A personal portfolio website, built with [SvelteKit](https://kit.svelte.dev/) and [Svelte 5](https://svelte.dev), and deployed as a static site to GitHub Pages.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Svelte 5 with TypeScript
+- Static site generation (via `@sveltejs/adapter-static`) for fast hosting on GitHub Pages
+- Pages: Home, Projects, Art, Video, Engineering, About, and Contact
+- [GitHub Actions](.github/workflows/deploy.yml) workflow that builds and deploys the site automatically on every push to `main`
+
+## Getting started
+
+This project uses [pnpm](https://pnpm.io) and [Sv](https://github.com/sveltejs/cli) for scaffolding.
 
 ```sh
-# create a new project in the current directory
+# Create a new project in the current directory
 npx sv create
 
-# create a new project in my-app
+# Create a new project in a directory called my-app
 npx sv create my-app
+```
+
+Install dependencies:
+
+```sh
+pnpm install
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `pnpm install`, start a development server:
+Start a local development server:
 
 ```sh
 pnpm run dev
 
-# or start the server and open the app in a new browser tab
+# or open the app in a new browser tab
 pnpm run dev -- --open
 ```
 
 ## Building
 
-To create a production version of your app:
+Create a production build (output goes to the `build/` directory):
 
 ```sh
 pnpm run build
 ```
 
-You can preview the production build with `pnpm run preview`.
+Preview the production build locally:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```sh
+pnpm run preview
+```
+
+## Deploying
+
+Deployment is handled automatically by the GitHub Actions workflow in
+`.github/workflows/deploy.yml`, which runs on every push to `main`. It installs
+dependencies, formats and lints the code, builds the static site, and deploys it
+to GitHub Pages.
+
+## Scripts
+
+| Command            | Description                                    |
+| ------------------ | ---------------------------------------------- |
+| `pnpm run dev`     | Start the local development server             |
+| `pnpm run build`   | Build a production version of the site         |
+| `pnpm run preview` | Preview the production build locally           |
+| `pnpm run check`   | Type-check the project                         |
+| `pnpm run lint`    | Check formatting and run ESLint                |
+| `pnpm run format`  | Format code with Prettier                       |
