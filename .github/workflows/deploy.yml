@@ -34,9 +34,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Format code
-        run: pnpm run format
-
       - name: Build site
         run: |
           pnpm run build
