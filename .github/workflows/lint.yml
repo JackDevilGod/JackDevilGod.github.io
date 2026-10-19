@@ -24,6 +24,9 @@ jobs:
         with:
           version: 12
 
+      - name: Install dependencies
+        run: pnpm install
+
       - name: Run linters
         uses: wearerequired/lint-action@v3
         with:
