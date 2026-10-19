@@ -15,7 +15,7 @@
 <header>
 	<div>
 		<a href={resolve('/')} id="header_logo" title="link to home">
-			<enhanced:img src={dg_logo} alt="DG Logo" title="DG logo"/>
+			<enhanced:img src={dg_logo} alt="DG Logo" title="DG logo" />
 		</a>
 
 		<pre class="header_text">

@@ -61,11 +61,11 @@ to GitHub Pages.
 
 ## Scripts
 
-| Command            | Description                                    |
-| ------------------ | ---------------------------------------------- |
-| `pnpm run dev`     | Start the local development server             |
-| `pnpm run build`   | Build a production version of the site         |
-| `pnpm run preview` | Preview the production build locally           |
-| `pnpm run check`   | Type-check the project                         |
-| `pnpm run lint`    | Check formatting and run ESLint                |
-| `pnpm run format`  | Format code with Prettier                       |
+| Command            | Description                            |
+| ------------------ | -------------------------------------- |
+| `pnpm run dev`     | Start the local development server     |
+| `pnpm run build`   | Build a production version of the site |
+| `pnpm run preview` | Preview the production build locally   |
+| `pnpm run check`   | Type-check the project                 |
+| `pnpm run lint`    | Check formatting and run ESLint        |
+| `pnpm run format`  | Format code with Prettier              |
