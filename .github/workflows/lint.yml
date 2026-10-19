@@ -1,0 +1,22 @@
+name: Lint
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v7
+
+      - name: Run linters
+        uses: wearerequired/lint-action@v3
+        with:
+          auto_fix: true
+          eslint: true
+          prettier: true
